@@ -1,0 +1,22 @@
+.item {
+    width: 25%;
+    float: left;
+    margin-top: 40px;
+}
+.wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.line {
+    border-top: 2px black; /* Сіра горизонтальна лінія */
+    margin: 20px 0;
+    padding: 0 20px;/* Відступи зверху та знизу лінії */
+}
+.item p:first-child {
+    font-weight: bold; /* Зробити текст жирним */
+    color: black; /* Змінити колір тексту на синій */
+}
+
+.item p:not(:first-child) {
+    text-transform: lowercase; /* Змінити текст на малі букви */
+}
