@@ -3,20 +3,25 @@
     float: left;
     margin-top: 40px;
 }
-.wrapper {
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.line {
-    border-top: 2px black; /* Сіра горизонтальна лінія */
-    margin: 20px 0;
-    padding: 0 20px;/* Відступи зверху та знизу лінії */
-}
-.item p:first-child {
-    font-weight: bold; /* Зробити текст жирним */
-    color: black; /* Змінити колір тексту на синій */
+.item {
+    position: relative;
 }
 
+.item .line {
+    top: 50%;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item p:first-child {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
 .item p:not(:first-child) {
-    text-transform: lowercase; /* Змінити текст на малі букви */
+    font-size: small;
+    color: grey;
 }
